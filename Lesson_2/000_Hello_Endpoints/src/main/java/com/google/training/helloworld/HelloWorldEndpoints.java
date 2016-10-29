@@ -30,4 +30,11 @@ public class HelloWorldEndpoints {
     public HelloClass sayHelloByName (@Named("name") String name) {
         return new HelloClass(name);
     }
+    
+    @ApiMethod(	name = "sayGoodPeriodByName",
+    			path = "sayGoodPeriodByName",
+    			httpMethod = HttpMethod.GET)
+    public HelloClass sayGoodPeriodByName (@Named("name") String name, @Named("period") String period) {
+    	return new HelloClass(name, period);
+    }
 }
