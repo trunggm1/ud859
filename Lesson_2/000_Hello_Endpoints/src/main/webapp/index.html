@@ -20,7 +20,14 @@
   
 <P>What is your name?<input value ="Zebra" id="name_field"></P>
 <br>
-<P>What period is it?<input value ="morning" id="period_field"></P>
+<P>What period is it?
+	<select name="period_filed" id="period_field">
+        <option value="morning" selected>Morning</option>
+        <option value="afternoon">Afternoon</option>
+        <option value="evening">Evening</option>
+        <option value="night">Night</option>
+    </select>
+</P>
 
 <P><input id="input_greet_by_name" type="button" value="please wait" 
   onclick="will_be_set_after_endpoints_apis_loaded"></P>

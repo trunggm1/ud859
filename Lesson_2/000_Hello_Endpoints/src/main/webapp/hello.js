@@ -92,7 +92,7 @@ function greetByName () {
  * Execute a request to the sayGoodPeriodByName() endpoints function.
  * Illustrates calling an endpoints function that takes an argument.
  */
-function greetByName () {
+function greetByPeriod () {
 	// Get the name from the name_field element
 	var name = document.getElementById("name_field").value;
 	var period = document.getElementById("period_field").value;
@@ -100,7 +100,7 @@ function greetByName () {
 	// Call the sayHelloByName() function.
 	// It takes one argument "name"
 	// On success, pass the response to sayHelloCallback()
-	var request = gapi.client.helloworldendpoints.sayGoodPeriodByName({'name': name, 'period': period});
+	var request = gapi.client.helloworldendpoints.greetByPeriod({'name': name, 'period': period});
 	request.execute(sayHelloCallback);
 }
 
